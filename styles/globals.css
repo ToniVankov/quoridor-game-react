@@ -1,0 +1,191 @@
+html,
+body {
+  background-color: rgb(99, 99, 99);
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/*
+  Quoridor CSS
+*/
+
+.gameBoard {
+  width: 590px;
+  /* --height: 495px; */
+  margin: 0 auto;
+  padding: 4px;
+
+  border: 10px solid #5A3300;
+  border-radius: 10px;
+  background-color: #A0793D;
+  
+  box-shadow: 1px 1px 5px black;
+
+}
+
+/*
+.gameSquare {
+  float: left;
+  background-color: antiquewhite;
+  --margin: 5px;
+  --border: 1px solid #888;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+}
+*/
+
+/*
+.gameCell {
+  margin: 0 auto;
+  border: 1px solid #888;
+  
+  width: 45px;
+  height: 45px;
+}
+*/
+
+/*
+.squareBorderTop {
+  border-top: 5px solid red;
+}
+
+.squareBorderBottom {
+  border-bottom: 5px solid red;
+}
+
+.squareBorderLeft {
+  border-left: 5px solid red;
+}
+
+.squareBorderRight {
+  border-right: 5px solid red;
+}
+*/
+
+
+.gameRowGroup {
+  width: 580px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.gameSquare {
+  --float: left;
+  --display:inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #8c6529;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+}
+
+.gameSquareAvailable {
+  border: 1px solid whitesmoke;
+}
+
+.gameWall {
+  width: 10px;
+  height: 114px;
+  margin: 0px 2px 0px 2px;
+}
+
+.gameTempWall {
+  width: 10px;
+  margin: 0px 2px 0px 2px;
+  z-index: -10;
+}
+
+.gameVerticalWall {
+  margin: -62px -51px 0px 0px;
+  width: 115px;
+  height: 10px;
+}
+
+.gameWallActive {
+  background-color: #6E470B;
+  box-shadow: 1px 1px 1px;
+  border-radius: 5px;
+}
+
+.gameWallUsable:hover {
+  background-color: #6E470B;
+  box-shadow: 1px 1px 1px;
+  border-radius: 5px;
+}
+
+.gameRowGroupFix {
+  margin-top: -50px;
+}
+
+.gamePawnBlack {
+  height: 46px;
+  width: 46px;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #222222;
+  
+  box-shadow: 1px 1px 2px #888888;
+}
+
+.gamePawnWhite {
+  height: 46px;
+  width: 46px;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #CCCCCC;
+  
+  box-shadow: 1px 1px 2px black;
+}
+
+.gameStatus {
+  margin: 0 auto;
+  width: 550px;
+  height: 60px;
+  text-align: center;
+}
+
+.gameMenu {
+  text-align: center;
+}
+
+.statusPlayersTurn {
+  margin: 10px;
+  display: inline;
+  float: left;
+}
+
+.statusWallLeft {
+  margin: 10px;
+  display: inline;
+  float: right;
+}
+
+.statusError {
+  color: red;
+}
