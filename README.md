@@ -1,3 +1,18 @@
+## Quoridor
+Remake of the board game with React.
+
+## Rules
+The main objective of the game is to get your pawn to the opposite side. You may either move your pawn one square forward, backwards, right or left or you may place a wall between squares. Can not make move through the walls. Each player can place maximum of 7* walls. Walls can not be placed to block a player's ability to reach their opposite side. If your opponent is right next to you, you can jump over them. When click on your pawn the available positions where you can move will be colored. The game ends when the opposite side is reached.
+
+![Playground](./assets/quoridor-playground-1.png)
+
+\*Number of walls can be changed from /constants/index.js file
+```
+export const WALLS_PER_PLAYER = 7;
+```
+
+## Framework
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
